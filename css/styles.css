@@ -1,12 +1,17 @@
+/* 全体の設定 */
 body{
   margin: 0;
-  font-family: "Noto Sans",sans-serif;
   color: #606470;
 }
 h1{
+  margin: 0;
   font-family:Gorditas; cursive;
 }
+h2{
+  margin: 0;
+}
 
+/* ページ上部 メインタグ内 */
 .logo img{
   width: 150px;
 }
@@ -25,15 +30,14 @@ a{
   display: flex;
   list-style: none;
 }
-
 .header-nav-item:not(:last-child) {
   margin-right: 30px;
 }
-
 div h1,p{
   margin: 0;
 }
 
+/* commit～文 */
 .lead{
   position: absolute;
   top: 150px;
@@ -42,20 +46,154 @@ div h1,p{
   font-size: 30px;
   margin-bottom:50px ;
 }
+/* 色違う文字 */
 span{
   color:#009fae;
 }
+/* リード文下の小文字 */
 .lead-inc{
   position: absolute;
   top: 350px;
   left: 50px;
   color: #606470;
+}
 
+/* リード文にかぶる画像 */
+div.lead-img{
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: 0px;
 }
-.main img{
-  width: 60%;
-  position: absolute;
-  top: 80px;
-  right: 0;
+
+/* ページ中部 Section内 News～ */
+section.news{
+  line-height: 50px;
+  justify-content: space-between;
 }
+h1.news-h1{
+  color: #a72d5a;
+  font-size: 15px;
+}
+
+/* 新着情報の表 */
+table{
+  width: 800px;
+  margin-right:auto ;
+  margin-left: auto;
+}
+a{
+  display: inline-block;
+}
+table,td{
+  border-bottom: 1px solid #e4e4e4;
+}
+table,th{
+  border-bottom: 3px solid #e4e4e4;
+  padding-bottom: 30px;
+}
+td span{
+  display: block;
+  text-align: center;
+}
+th{
+  font-size: large;
+}
+
+/* 表のボタン設定 */
+.btn{
+  background-color: #a72d5a;
+  width: 200px;
+  padding: 10px ;
+  border-radius: 30%;
+  color: #fff;
+}
+
+/* aboutの下 */
+section.about{
+  background-color: #f5f5f5;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+.about-container{
+  display: flex;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-h1{
+  font-size: 15px;
+  margin-top: 50px;
+  text-align: center;
+  color: #a72d5a;
+}
+/* aboutの下 technology×Coaching */
+.about-h2{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.text{
+  margin-bottom: 20px;
+}
+.abouttext{
+  margin-bottom: 50px;
+  margin-right: 100px;
+}
+/* aboutの下画像 */
+.about-img{
+  width: 300px;
+}
+
+/* serviceより下 */
+section.service{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* Serviceの文字 */
+.service-h1{
+  font-size: 15px;
+  color: #a72d5a;
+}
+/* サービス内容の文字 */
+.service-h2{
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* serviceの画像３つ */
+.service img{
+  width: 200px;
+}
+/* serviceのコンテイナー３つ */
+.service-container{
+  display: grid;
+}
+
+/* 左に１つ */
+div.service-container-item1{
+  background-color: #b31667;
+  color: #fff;
+  padding :30px;
+  width: 500px;
+  height: 300px;
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+/* 縦並び２つ */
+.service-container-item2{
+  background-color: #b35b8b;
+  color: #fff;
+   width: 500px;
+  height: 150px;
+}
+.service-container-item3{
+  background-color: #b2889e;
+  color: #fff;
+  width: 500px;
+  height: 150px;
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+
 

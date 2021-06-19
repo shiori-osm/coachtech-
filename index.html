@@ -44,41 +44,41 @@
 </main>
 
 <section class="news">
-  <h1 class="news-h1">news</h1>
-  <table>
-    <tr>
-      <th>新着情報</th>
-      <th></th>
-      <th></th>
-    </tr>
-    <tr>
-      <td>2021/01/01</td>
-      <td><span class="btn">ニュース</span></td>
-      <td>COACHTECHのサービスが開始されました。</td>
-    </tr>
-    <tr>
-      <td>2021/01/01</td>
-      <td><span class="btn">ニュース</span></td>
-      <td>COACHTECHのサービスが開始されました。</td>
-    </tr>
-    <tr>
-      <td>2021/01/01</td>
-      <td><span class="btn">ニュース</span></td>
-      <td>COACHTECHのサービスが開始されました。</td>
-    </tr>
-    <tr>
-      <td>2021/01/01</td>
-      <td><span class="btn">ニュース</span></td>
-      <td>COACHTECHのサービスが開始されました。</td>
-    </tr>
-  </table>
-</section>
-
-  <hr>
-
+  <div class="news-head-table">
+    <div class="news-head">
+      <h1 class="news-h1">news</h1>
+      <caption><p class="news-table-title">新着情報</p></caption>
+    </div>
+    <table class="news-table">
+      <tr>
+        <td>2021/01/01</td>
+        <td><span class="btn">ニュース</span></td>
+        <td>COACHTECHのサービスが開始されました。</td>
+      </tr>
+      <tr>
+        <td>2021/01/01</td>
+        <td><span class="btn">ニュース</span></td>
+        <td>COACHTECHのサービスが開始されました。</td>
+      </tr>
+      <tr>
+        <td>2021/01/01</td>
+        <td><span class="btn">ニュース</span></td>
+        <td>COACHTECHのサービスが開始されました。</td>
+      </tr>
+      <tr>
+        <td>2021/01/01</td>
+        <td><span class="btn">ニュース</span></td>
+        <td>COACHTECHのサービスが開始されました。</td>
+      </tr>
+    </table>
+  </div>
+  </section>
+  
 <section class="about">
-  <h1 class="about-h1">about</h1>
-  <h2 class="about-h2">Technology × Coaching</h2>
+  <div class="about-h1-title">
+    <h1 class="about-h1">about</h1>
+    <h2 class="about-h2">Technology × Coaching</h2>
+  </div>
   <div class="about-container">
     <div class="abouttext">
       <p class="text">株式会社estraはデジタル化が遅れている教育業界に<br>
@@ -97,27 +97,123 @@
 </section>
 
 <section class="service">
-  <h1 class="service-h1">Service</h1>
-  <h2 class="service-h2">サービス内容</h2>
+  <div class="service-h1-h2">
+    <h1 class="service-h1">Service</h1>
+    <h2 class="service-h2">サービス内容</h2>
+  </div>
   <div class="service-container">
     <div class="service-container-item1">
-      <img src="img/svg/service__first.svg" alt="サービス欄の画像です">
+      <img src="img/svg/service__first.svg"  class="service-img1" alt="サービス欄の画像です">
       <h3>教育事業</h3>
       <p>サンプルテキストがここに入ります。サンプルテキストがここに入ります。サンプルテキストがここに入ります。</p>
     </div>
-    <div class=></div>
-    <div class="service-container-item2">
-      <img src="img/svg/service__first.svg" alt="サービス欄の画像です">
-      <h3>教育事業</h3>
-      <p>サンプルテキストがここに入ります。サンプルテキストがここに入ります。サンプルテキストがここに入ります。</p>
+    <div classs="service-right">
+      <div class="service-container-item2">
+        <img src="img/svg/service__first.svg" class="service-img23" alt="サービス欄の画像です">
+        <div class="service-h3-p">
+          <h3>教育事業</h3>
+          <p>サンプルテキストがここに入ります。<br>サンプルテキストがここに入ります。<br>サンプルテキストがここに入ります。</p>
+        </div>
+      </div>
+      <div class="service-container-item3">
+        <img src="img/svg/service__first.svg" class="service-img23"  alt="サービス欄の画像です">
+        <div class="service-h3-p">
+          <h3>教育事業</h3>
+          <p>サンプルテキストがここに入ります。<br>サンプルテキストがここに入ります。<br>サンプルテキストがここに入ります。</p>
+        </div>
+      </div>
     </div>
-    <div class="service-container-item3">
-      <img src="img/svg/service__first.svg" alt="サービス欄の画像です">
-      <h3>教育事業</h3>
-      <p>サンプルテキストがここに入ります。サンプルテキストがここに入ります。サンプルテキストがここに入ります。</p>
     </div>
-
 </section>
+
+<section class="blog">
+  <h1 class="blog-h1">Blog</h1>
+  <h2 class="blog-h2">ブログ</h2>
+
+  <div class="blog-container">
+    <div class="blog-card">
+      <h3 class="card-tag">Blog</h3>
+      <img src="img/blog__first.jpg" class="blog-img" alt="ブログの画像です">
+      <p class="blog-text">プログラミング学習の勉強方法を<br>特集。挫折しない秘訣とは？</p>
+      <p class="date">2021/01/01</p>
+      <a href="#" class="blog-card-a">#COACHTECH</a>
+    </div>
+    
+    <div class="blog-card">
+      <h3 class="card-tag">Blog</h3>
+      <img src="img/blog__first.jpg" class="blog-img" alt="ブログの画像です">
+      <p class="blog-text">プログラミング学習の勉強方法を<br>特集。挫折しない秘訣とは？</p>
+      <p class="date">2021/01/01</p>
+      <a href="#" class="blog-card-a">#COACHTECH</a>
+    </div>
+    
+    <div class="blog-card">
+      <h3 class="card-tag">Blog</h3>
+      <img src="img/blog__first.jpg" class="blog-img" alt="ブログの画像です">
+      <p class="blog-text">プログラミング学習の勉強方法を<br>特集。挫折しない秘訣とは？</p>
+      <p class="date">2021/01/01</p>
+      <a href="#" class="blog-card-a">#COACHTECH</a>
+    </div>
+  </div>
+  <a href="#" class="blog-btn">一覧ページへ</a>
+</section>
+
+<section class="company">
+  <div class="company-h1-title">
+    <h1 class="company-h1">Company</h1>
+    <caption class="company-table-title">会社概要</caption>
+  </div>
+  <table class="company-table">
+    <tr>
+      <th>会社名</th>
+      <td>株式会社estra</td>
+    </tr>
+    <tr>
+      <th>代表者名</th>
+      <td>福場凛太郎</td>
+    </tr>
+    <tr>
+      <th>本社所在地</th>
+      <td>東京都渋谷区1-1-1</td>
+    </tr>
+    <tr>
+      <th>従業員数</th>
+      <td>100名</td>
+    </tr>
+    <tr>
+      <th>電話番号</th>
+      <td>0120-00-0000</td>
+    </tr>
+    <tr>
+      <th>資本金</th>
+      <td>&yen;10,000,000-</td>
+    </tr>
+  </table>
+</section>
+
+<section class="info">
+  <div class="recruit-url">
+    <a href="#">採用情報</a>
+  </div>
+  <div class="interview-url">
+    <a href="#">社員インタビュー</a>
+  </div>
+</section>
+
+<section class="contact">
+  <form action="#" method="post">
+    <p>株式会社estraへのお問い合わせはこちらから</p>
+    <input type="text">
+  </form>
+  <div class="contact-btn">
+    <img src="img/svg/mailicon.svg" class="contact-mail" alt="メール画像です">
+    <a href="#" class="contact-url">お問い合わせ</a>
+  </div>
+</section>
+
+<footer>
+  <p>Copyright &copy; estra,inc All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>

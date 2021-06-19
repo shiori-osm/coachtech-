@@ -10,7 +10,6 @@ h1{
 h2{
   margin: 0;
 }
-
 /* ページ上部 メインタグ内 */
 .logo img{
   width: 150px;
@@ -38,6 +37,9 @@ div h1,p{
 }
 
 /* commit～文 */
+.main{
+  padding-bottom: 50px;
+}
 .lead{
   position: absolute;
   top: 150px;
@@ -60,51 +62,68 @@ span{
 
 /* リード文にかぶる画像 */
 div.lead-img{
-  max-width: 70%;
+  max-width: 80%;
   margin-left: auto;
   margin-right: 0px;
 }
 
-/* ページ中部 Section内 News～ */
+/* News～ */
 section.news{
-  line-height: 50px;
-  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 50px;
 }
-h1.news-h1{
+.news-head{
+  margin: 10px;
+}
+.news-table-title{
+  font-size: 25px;
+}
+.news-head-table{
+  width: 50%;
+  margin:auto;
+}
+.news-h1{
   color: #a72d5a;
   font-size: 15px;
+  margin-bottom: 5px;
 }
-
 /* 新着情報の表 */
-table{
+.news-table-title{
+  text-align: left;
+  font-weight: bold;
+  font-size: 25px;
+}
+.news-table{
+  border-top: 3px solid #e4e4e4 ;
+  border-bottom: 3px solid #e4e4e4 ;
   width: 800px;
-  margin-right:auto ;
-  margin-left: auto;
+  /* margin-right:auto ;
+  margin-left: auto; */
+  padding-bottom: 50px;
 }
-a{
-  display: inline-block;
-}
-table,td{
+.news-table,td{
   border-bottom: 1px solid #e4e4e4;
 }
-table,th{
-  border-bottom: 3px solid #e4e4e4;
+
+.news-table,th{
   padding-bottom: 30px;
 }
-td span{
-  display: block;
+.news-rable td span{
   text-align: center;
 }
-th{
+.news-table th{
   font-size: large;
 }
 
 /* 表のボタン設定 */
 .btn{
+  width: 80%;
+  height: 20px;
+  text-align: center;
+  display: inline-block;
   background-color: #a72d5a;
-  width: 200px;
-  padding: 10px ;
-  border-radius: 30%;
+  padding: 5px 10px ;
+  border-radius: 20px;
   color: #fff;
 }
 
@@ -121,10 +140,10 @@ section.about{
   margin-right: auto;
 }
 .about-h1{
+  color: #a72d5a;
   font-size: 15px;
   margin-top: 50px;
   text-align: center;
-  color: #a72d5a;
 }
 /* aboutの下 technology×Coaching */
 .about-h2{
@@ -145,15 +164,16 @@ section.about{
 }
 
 /* serviceより下 */
+.service-h1-h2{
+  margin: auto;
+}
 section.service{
-  text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* Serviceの文字 */
 .service-h1{
-  font-size: 15px;
   color: #a72d5a;
+  font-size: 15px;
 }
 /* サービス内容の文字 */
 .service-h2{
@@ -165,35 +185,209 @@ section.service{
 .service img{
   width: 200px;
 }
-/* serviceのコンテイナー３つ */
+/* serviceのコンテイナー３つ分 */
 .service-container{
-  display: grid;
+  display: flex;
+  margin: 50px;
 }
 
 /* 左に１つ */
 div.service-container-item1{
   background-color: #b31667;
   color: #fff;
-  padding :30px;
-  width: 500px;
-  height: 300px;
-  grid-column: 1/2;
-  grid-row: 2/4;
+  /* max-width: 50%; */
+  flex: 1;
 }
+
 /* 縦並び２つ */
+.service-right{
+  flex-direction: column;
+  /* width: 50%; */
+  flex:1;
+}
 .service-container-item2{
+  display: flex;
   background-color: #b35b8b;
   color: #fff;
-   width: 500px;
-  height: 150px;
+  align-items: center;
+}
+.service-h3-p{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .service-container-item3{
   background-color: #b2889e;
   color: #fff;
-  width: 500px;
-  height: 150px;
-  grid-column: 2/4;
-  grid-row: 3/4;
+  align-items: center;
+  display: flex;
 }
 
+/* 画像１の個別設定 */
+.service-img1{
+  margin: 30px 30px 0px 30px;
+}
+/* 画像２と３の設定 */
+.service-img23{
+  margin: 20px ;
+  float: left;
+}
 
+/* ブログから下 */
+/* ブログ下 全体の設定 */
+.blog{
+  background-color: #f5f5f5;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+h1.blog-h1{
+  margin-bottom: 5px;
+  color: #a72d5a;
+  font-size: 15px;
+  text-align: center;
+}
+/* カタカナブログの文字 */
+.blog-h2{
+  margin-bottom: 50px;
+  text-align: center;
+}
+/* カード全体の設定 */
+.blog-container{
+  justify-content: center ;
+  display: flex;
+}
+/* カード１こ１この設定 */
+.blog-card{
+  background-color: #fff;
+  margin-right: 50px;
+  padding-bottom:30px ;
+  width:300px;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* カード内の画像 */
+img.blog-img{
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+/* ブログ画像の上のBlogの文字 */
+.card-tag{
+  margin: 0;
+  background-color: #a72d5a;
+  color: #fff;
+  font-weight: normal;
+  padding: 5px 10px;
+  border-radius: 10px 0 0 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+/* プログラミング学習～本文 */
+.blog-text{
+  padding: 15px 15px 30px 15px;
+  font-weight: bold;
+}
+/* 2021/01～日付 */
+p.date{
+  display: inline;
+  padding: 15px 15px 30px 15px;
+}
+/* ＃COACHTECHリンク */
+.blog-card-a{
+  float: right;
+  padding-right: 30px;
+}
+
+/* 一覧ページボタン */
+.blog-btn{
+  display: block;
+  width: 200px;
+  margin-top: 20px ;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #a72d5a;
+  color: #a72d5a;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+
+/* Companyより下 */
+/* Compan部分全体の設定 */
+.company-h1{
+  color: #a72d5a;
+  font-size: 15px;
+  margin-top: 80px;
+}
+/* 会社概要とCompanyの文字 */
+.company-h1-title{
+  width: 50%;
+  margin: auto;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* 会社概要表 */
+.company-table{
+  width: 800px;
+  margin-right:auto ;
+  margin-left: auto;
+  margin-bottom:50px ;
+  border: 2px solid #e4e4e4;
+}
+.company-table th {
+	background:#e4e4e4;
+    font-weight: bold;
+}
+.company-table th,td{
+  padding: 10px 10px;
+  text-align: left;
+}
+
+/* 背景画像＋りんく */
+.info {
+  display: flex;
+  padding-bottom: 50px;
+}
+div.recruit-url{
+  background:url(/img/recruit.png) ;
+}
+div.interview-url{
+  background-image: url(/img/interview.png);
+}
+
+/* お問い合わせ欄 */
+.contact{
+  text-align: center;
+}
+
+.contact-mail{
+  width: 30px;
+  vertical-align: baseline;
+
+}
+div.contact-btn{
+  width: 300px;
+  box-shadow: 10px 5px rgba;
+  color: #fff;
+  text-align: center;
+  background-color: #a72d5a;
+  border-radius: 15px;
+  align-items: center;
+}
+a.contact-url{
+  color: #fff;
+  vertical-align: baseline;
+}
+
+/* footerたぐ */
+footer{
+  text-align: center;
+  padding: 30px;
+  background-color: #f5f5f5;
+}

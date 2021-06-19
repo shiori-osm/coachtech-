@@ -162,7 +162,7 @@ section.about{
 
 /* serviceより下 */
 .service-h1-h2{
-  margin: auto;
+  margin-left: auto;
 }
 section.service{
   padding-top: 50px;
@@ -192,12 +192,13 @@ section.service{
 div.service-container-item1{
   background-color: #b31667;
   color: #fff;
-  max-width: 50%;
+  width: 50%;
   flex: 1;
 }
-
+ 
 /* 縦並び２つ */
 .service-right{
+  width: 50%;
   flex-direction: column;
   flex:1;
 }
@@ -357,13 +358,20 @@ p.date{
 .info span{
   text-align: center;
 }
-div.recruit-url{
-  background-image:url(../img/recruit.png) ;
+
+a.recruit-url{
+  background-image: url(../img/recruit.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   height: 200px;
 }
-div.interview-url{
+a.interview-url{
   background-image: url(../img/interview.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   height: 200px;
 }
@@ -394,14 +402,17 @@ a.contact-url{
   vertical-align:middle;
 }
 .input{
-  border: #fff;
-  padding: 20px;
-  cursor: text ;
+  margin: auto;
+  height: 20px;
+  width: 1px;
+  background-color: #a72d5a;
+
 }
 
-a.input:hover{
-  cursor: text;
-}
+
+/* a.input:hover{ */
+  /* cursor: text; */
+/* } */
 
 /* footerたぐ */
 footer{
